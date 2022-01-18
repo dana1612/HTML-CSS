@@ -1,0 +1,136 @@
+ <!DOCTYPE html>
+<html>
+ 
+<form id="survey-form" >
+
+<head>
+  <style>
+  
+  body {
+    background-color: black;
+    background-image: url(text.jpg);
+	background-size: 100% 100%;
+  }
+  
+  h1 {
+    font-family: "Chiller";
+    font-size: 90px;
+	color:  #ff001e ;
+	text-align: center;
+	margin-bottom: -20px;
+	text-shadow: 2px 2px 2px  #C70039;
+  }
+   
+  #description {
+    color:  #ff001e ;
+	font-family: "Chiller";
+	text-align: center;
+	font-size: 35px;
+	font-weight: 500;
+	text-shadow: 2px 1px 2px  #C70039;
+  }
+  
+  legend {
+    padding: 3px 20px;
+    color:  #ff001e;
+	font-family: "Chiller";
+	text-align: center;
+	font-size: 35px;
+	text-shadow: 2px 1px 2px  #C70039;
+  }
+  
+  fieldset {
+    color:  #ff001e;
+	font-family: "Chiller";
+	font-size: 35px;
+	font-weight: 500;
+	text-shadow: 2px 1px 2px  #C70039;
+	border-color: #C70039;
+  }  
+	
+  input {
+    background-color: #dcccce;	
+  }
+  
+  #submit {
+    border: 2px solid #C70039;
+    padding: 15px 32px;
+    text-align: center;
+    font-family: "Chiller";
+    font-size: 35px;
+	color:  #ff001e ;
+	border-radius: 4px;
+	text-shadow: 2px 2px 2px  #C70039;
+	background-color: Transparent;
+    background-repeat:no-repeat;
+  }
+  
+  
+  </style>
+
+</head>
+ 
+<body>
+   
+  <h1 id="title">Halloween Party Survey</h1>
+  <p id="description"><b>Please fill it in ASAP :)</b></p>
+   
+  <fieldset>
+  <div>
+    <label id="name-lable" for="name" style="padding-right:30px;">Name:</label>
+    <input type="text" id="name" name="user_name" placeholder="Enter name">
+  </div>
+ 
+  <div>
+    <label id="email-label" for="Email" style="padding-right:32px;">Email:</label>
+    <input type="email" id="email" name="user_email" placeholder="Enter email"> 
+  </div>
+
+  <div>
+    <label id="number-label" for="age" style="padding-right:44px;">Age:</label>
+    <input type="number" id="number" name="user_age" placeholder="Enter age" min="1" max="110">
+  </div>
+ 
+    <label for="gender" style="padding-right:15px;">Gender:</label>
+    <select id="dropdown" style="background-color:#dcccce;">
+      <option style="background-color:#dcccce;" value="male">Male</option>
+      <option style="background-color:#dcccce;" value="female">Female</option>
+      <option style="background-color:#dcccce;" value="other">Other</option>
+  </select>
+  </fieldset>
+
+  <fieldset>
+	  <legend>I Need Transfer:</legend>
+      <label for="transfer"></label>
+      <input type="radio" name="transfer" value="yes" checked> Yes<br>
+      <input type="radio" name="transfer" value="no"> No<br>
+      <input type="radio" name="transfer" value="can_help"> I can give a ride to the rest
+  </fieldset>
+
+  <fieldset>
+    <legend>Please choose which celebrity you want to see at the party:</legend>
+    <label for="celebrity"></label>
+    <input type="checkbox" name="celebrity" value="tattoo">Michael Myers<br>
+    <input type="checkbox" name="celebrity" value="Freddy">Freddy Krueger<br>
+    <input type="checkbox" name="celebrity" value="Leatherface">Leatherface<br>
+    <input type="checkbox" name="celebrity" value="Jason">Jason Voorhes<br>
+    <input type="checkbox" name="celebrity" value="nobody"> Nobody<br>
+    <input type="checkbox" name="celebrity" value="everyone" checked> Everyone<br>
+  </fieldset>
+
+  <fieldset>
+    <legend>Your Proposals:</legend>
+    <div>
+      <label for="msg"></label>
+      <textarea style="background-color:#dcccce;" id="msg" name="user_message" rows="5" cols="50" placeholder="Enter your proposals here"></textarea>  
+</div>
+  </fieldset>
+
+  <div>
+  <p> <center> <button type="submit" id="submit">SUBMIT</button> </center> </p>
+  </div>
+</body>
+</form>
+ 
+</body>
+</html> 
